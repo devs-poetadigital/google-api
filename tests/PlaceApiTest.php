@@ -14,7 +14,7 @@ class PlaceApiServiceTest extends OrchestraTestCase
     {
         parent::setUpBeforeClass();
         self::$defaultConfig = [
-            'GOOGLE_API_KEY' => 'AIzaSyCawr1ml3N2T32mzAJnDNqwbHSSGWEZUSw'
+            'GOOGLE_API_KEY' => 'test'
         ];
     }
 
@@ -25,9 +25,7 @@ class PlaceApiServiceTest extends OrchestraTestCase
 
     public function testPlaceDetail()
     {
-        $service = new PlaceApi([
-            'GOOGLE_API_KEY' => 'AIzaSyCawr1ml3N2T32mzAJnDNqwbHSSGWEZUSw'
-        ]);
+        $service = new PlaceApi(self::$defaultConfig);
         $service->getPlaceDetail('ChIJAQ-y5OEpdTER0Aob1jFvhS0');
     }
 }
