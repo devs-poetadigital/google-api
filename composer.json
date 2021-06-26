@@ -1,0 +1,62 @@
+{
+  "name": "devs-poetadigital/google-api",
+  "type": "library",
+  "description": "A tool to quickly set up the base files of a PHP library package.",
+  "keywords": [
+    "php",
+    "google",
+    "place",
+    "library"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Poeta",
+      "homepage": "https://poetadigital.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4 | ^8.0",
+    "ext-json": "*",
+    "guzzlehttp/guzzle": "^7.3",
+    "spatie/data-transfer-object": "^2.8",
+    "symfony/filesystem": "^5",
+    "symfony/finder": "^5",
+    "symfony/process": "^5",
+    "twig/twig": "^3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0",
+    "mockery/mockery": "1.*",
+    "orchestra/testbench": "6.* || 5.*",
+    "php-coveralls/php-coveralls": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+        "GoogleApi\\": "src"
+    },
+    "files": [
+    ]
+  },
+  "scripts": {
+    "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes",
+    "test": "vendor/bin/phpunit"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "GoogleApi\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+        "providers": [
+            "GoogleApi\\GoogleApiServiceProvider"
+        ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
