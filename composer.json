@@ -9,6 +9,11 @@
     "library"
   ],
   "license": "MIT",
+    "homepage": "https://github.com/devs-poetadigital/google-api",
+    "support": {
+        "issues": "https://github.com/devs-poetadigital/google-api/issues",
+        "source": "https://github.com/devs-poetadigital/google-api"
+    },
   "authors": [
     {
       "name": "Poeta",
