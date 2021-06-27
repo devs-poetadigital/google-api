@@ -18,4 +18,5 @@ class PlaceDto extends FlexibleDataTransferObject
     public ?array $types;
     public ?PlacePhotoCollection $photos;
     public ?PlaceAddressCollection $address_components;
+    public ?PlaceGeometry $geometry;
 }
