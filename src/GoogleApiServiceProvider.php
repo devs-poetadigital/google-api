@@ -15,7 +15,7 @@ class GoogleApiServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../../config/google-api.php' => config_path('google-api.php'),
+            __DIR__.'/../config/google-api.php' => config_path('google-api.php'),
         ]);
     }
 
@@ -26,7 +26,7 @@ class GoogleApiServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $configPath = __DIR__.'/../config/google-api.php';
+        $configPath = __DIR__.'/../../config/google-api.php';
         $this->mergeConfigFrom($configPath, 'google-api');
 
         $this->app->bind(IPlaceApi::class, PlaceApi::class);
