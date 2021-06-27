@@ -15,7 +15,7 @@ class PlaceApi implements IPlaceApi{
     {
         if(is_null($config))
         {
-            $config = $this->app->make('config')->get('google-api');
+            $config = app()->make('config')->get('google-api');
         }
         $authenKey = new ApiKeyAuthen($config);
         $this->httpRequest = new HttpClient($authenKey);
