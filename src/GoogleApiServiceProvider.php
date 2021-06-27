@@ -16,7 +16,7 @@ class GoogleApiServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/../config/google-api.php' => config_path('google-api.php'),
-        ]);
+        ],'config');
     }
 
     /**
