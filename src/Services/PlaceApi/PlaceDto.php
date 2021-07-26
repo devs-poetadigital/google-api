@@ -11,7 +11,7 @@ class PlaceDto extends FlexibleDataTransferObject
     public string $reference;
     public $opening_hours;
     public ?string $business_status;
-    public ?float $rating;
+    public $rating;
     public ?string $url;
     public ?string $adr_address;
     public ?string $formatted_phone_number;
@@ -19,8 +19,8 @@ class PlaceDto extends FlexibleDataTransferObject
     public ?string $website;
     public ?string $vicinity;
     public ?string $formatted_address;
-    public ?int $utc_offset;
-    public ?int $user_ratings_total;
+    public $utc_offset;
+    public $user_ratings_total;
     public ?array $types;
     public ?PlacePhotoCollection $photos;
     public ?PlaceAddressCollection $address_components;
